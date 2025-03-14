@@ -1,0 +1,128 @@
+{
+  "personal": {
+    "name": "Shubham Doshi",
+    "email": "shubhamdoshi126@gmail.com",
+    "linkedin": "linkedin.com/in/shubham-doshi-/",
+    "github": "github.com/ShubhamDoshi126"
+  },
+  "education": [
+    {
+      "institution": "University of Michigan, Dearborn 09/2024 \u2013 12/2025 Masters",
+      "date": "of Science in Artificial Intelligence",
+      "courses": "Courses: Artificial Intelligence, Intelligent systems, Pattern Recognition and Neural networks"
+    },
+    {
+      "institution": "Savitribai Phule Pune University 08/2019 - 07/2023 B. Tech",
+      "date": "in Electronics and Telecommunication engineering",
+      "courses": "Courses: Data Structures (used C++), OOP (used Java), Microprocessors, Database Management (used SQL), Cellular Networks"
+    }
+  ],
+  "experience": [
+    {
+      "company": "Ideas Revenue Solutions.",
+      "location_date": "Pune",
+      "title": "Associate Software Developer Intern",
+      "description": [
+        "Developed an AI-based project utilizing machine learning techniques, data pipelines and OpenAI API effectively to streamline specific IT processes, customer support tasks.",
+        "Worked on data warehousing and data analysis for optimum data retrieval and reporting. Conducted data processing and transformation using SQL and Excel to streamline the machine learning workflow.",
+        "Used decision tree algorithms, GitHub and Bitbucket for version control. Explored the potential of RAG & fine-tuning pipelines for automation of time-consuming client cases and reduced time taken to complete the case by around 60%.",
+        "Parallelly managed the development of an HR competency dashboard for user friendly competency management of employees, where I did extensive analysis of company\u2019s database schema on Power BI to understand different team relationships and hierarchy and accurately represent them on the HR competency dashboard."
+      ]
+    },
+    {
+      "company": "Delight Xpress.",
+      "location_date": "Pune",
+      "title": "Business Developer Intern",
+      "description": [
+        "Conducted competitive analysis and managed the social media marketing strategy to attract affiliates.",
+        "Worked on UI/UX design, content creation and digital marketing for the startup.",
+        "Engaged with the founder to analyze company\u2019s SWOT and business strategy in Indian markets."
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "title": "Aura sense - Identity and Mood Recognition system",
+      "description": [
+        "Developed a comprehensive system for gender and mood recognition using CNN models.",
+        "For gender classification, implemented transfer learning with the MobileNetV2 architecture and applied data augmentation and upscaling techniques, achieving a test accuracy of 98.38%. As this was a team project it enhanced my project management skills.",
+        "For mood recognition, designed and trained a CNN model to effectively evaluate a range of emotions from facial images."
+      ]
+    },
+    {
+      "title": "Sentiment analysis on Mental Health dataset",
+      "description": [
+        "Combined and cleaned a dataset of 90000 statements mapped to 11 different emotions.",
+        "Comparing accuracy and training efficiencies of traditional ML models like Linear SVC, RandomForestClassifier and LSTM.",
+        "Enhancing the Gemini powered Mental Health Chatbot to use sentiment analysis and emotion classified results in its responses."
+      ]
+    },
+    {
+      "title": "SchedulrAI \u2013 Computer vision and GPU optimized Image to schedule system",
+      "description": [
+        "Built a tool to extract events from images of tables using OCR (Tesseract) and AI, mapping them into structured Google Calendar schedules. Useful for images with timetable, movie tickets, conference schedules, etc.",
+        "Emphasized GPU-based acceleration for real-time processing and performance tuning."
+      ]
+    },
+    {
+      "title": "Voice-Controlled AI Virtual Assistant",
+      "publication": "https://www.jetir.org/view?paper=JETIR2309247",
+      "description": [
+        "Developed a virtual personal assistant integrated with ChatGPT API, targeted for students, professionals and blind users.",
+        "Used Python, PyQT, ChatGPT API, Text to speech library - Pyttsx3, Whisper. Explored Amazon Transcribe and SpeechBrain."
+      ]
+    }
+  ],
+  "skills": {
+    "Programming Languages": [
+      "Python",
+      "JavaScript",
+      "C++",
+      "Java (Basic)",
+      "SQL",
+      "HTML"
+    ],
+    "AI & Machine Learning": [
+      "Deep Learning",
+      "NLP",
+      "Pandas",
+      "Numpy",
+      "Scikit-learn",
+      "TensorFlow",
+      "PyTorch",
+      "LangChain",
+      "Spark",
+      "Matplotlib",
+      "LLM",
+      "Text mining",
+      "Information Retrieval",
+      "MATLAB",
+      "OpenCV",
+      "RAG and fine-tuning pipelines",
+      "Open source Huggingface and Streamlit cloud."
+    ],
+    "Automation & Testing": [
+      "Selenium",
+      "Playwright",
+      "Postman",
+      "Pytest",
+      "Docker",
+      "CI/CD",
+      "Linux for data management and virtualization."
+    ],
+    "Cloud Platforms": [
+      "Google Cloud Platform (GCP)",
+      "AWS"
+    ],
+    "Version Control & Tools": [
+      "Git",
+      "GitHub",
+      "GitLab",
+      "Bitbucket",
+      "Jira",
+      "Trello",
+      "MS Excel",
+      "Power BI"
+    ]
+  }
+}

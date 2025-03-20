@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import ScrollReveal from '../animations/ScrollReveal';
 import GlowEffect from '../animations/GlowEffect';
 import FloatingElement from '../animations/FloatingElement';
+import profileImage from '../animations/IMG_4363.jpg'; // Import your image
 
 const AboutSection = () => {
   const sectionRef = useRef<HTMLElement>(null);
@@ -83,8 +84,12 @@ const AboutSection = () => {
             <FloatingElement>
               <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-[var(--secondary)] shadow-lg shadow-[var(--secondary)]/20">
                 <div className="absolute inset-0 bg-gradient-to-br from-[var(--secondary)] to-[var(--highlight)] opacity-70"></div>
-                <div className="absolute inset-0 flex items-center justify-center text-4xl font-bold text-white">
-                  {resumeData?.personal?.name ? resumeData.personal.name.split(' ').map((n: string) => n[0]).join('') : 'SD'}
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <img
+                    src={profileImage} // Use the imported image
+                    alt="Profile"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
               </div>
             </FloatingElement>

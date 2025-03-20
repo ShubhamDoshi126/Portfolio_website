@@ -46,7 +46,7 @@ const AboutSection = () => {
               With a background in Electronics and Telecommunication engineering from Savitribai
               Phule Pune University, I've developed a strong foundation in both hardware and
               software aspects of technology. My professional experience includes working on
-              AI-based projects, data warehousing, and developing HR competency dashboards.
+              AI-based projects, data processing, automation and developing web apps and dashboards.
             </p>
             <p className="text-[var(--accent)] mb-6">
               I'm particularly interested in the intersection of AI with real-world applications,

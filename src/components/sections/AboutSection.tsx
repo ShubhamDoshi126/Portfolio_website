@@ -79,6 +79,21 @@ const AboutSection = () => {
               </a>
             </div>
           </ScrollReveal>
+          <ScrollReveal direction="right" delay={400} className="order-1 md:order-2 flex justify-center">
+            <FloatingElement>
+              <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-[var(--secondary)] shadow-lg shadow-[var(--secondary)]/20">
+                {/* Option 1: Using Next.js Image component (recommended) */}
+                <Image
+                  src="/images/profile.jpg" // Update this path to where your image is stored in the public folder
+                  alt="Profile"
+                  fill
+                  sizes="(max-width: 768px) 256px, 320px"
+                  className="object-cover"
+                  priority
+                />
+              </div>
+            </FloatingElement>
+          </ScrollReveal>
         </div>
       </div>
     </section>

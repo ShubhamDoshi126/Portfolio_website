@@ -79,12 +79,14 @@ const AboutSection = () => {
               </a>
             </div>
           </ScrollReveal>
-
           <ScrollReveal direction="right" delay={400} className="order-1 md:order-2 flex justify-center">
             <FloatingElement>
               <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-[var(--secondary)] shadow-lg shadow-[var(--secondary)]/20">
-                <div className="absolute inset-0 bg-gradient-to-br from-[var(--secondary)] to-[var(--highlight)] opacity-70"></div>
-                <div className="absolute inset-0 flex items-center justify-center">
+                {/* Background gradient */}
+                <div className="absolute inset-0 bg-gradient-to-br from-[var(--secondary)] to-[var(--highlight)] opacity-70 z-10"></div>
+                
+                {/* Image */}
+                <div className="absolute inset-0 flex items-center justify-center z-20">
                   <img
                     src={profileImage} // Use the imported image
                     alt="Profile"

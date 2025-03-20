@@ -84,7 +84,7 @@ const AboutSection = () => {
               <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-[var(--secondary)] shadow-lg shadow-[var(--secondary)]/20">
                 {/* Option 1: Using Next.js Image component (recommended) */}
                 <Image
-                  src="/images/profile.jpg" // Update this path to where your image is stored in the public folder
+                  src="/IMG_4363.jpg"  // Update this path to where your image is stored in the public folder
                   alt="Profile"
                   fill
                   sizes="(max-width: 768px) 256px, 320px"

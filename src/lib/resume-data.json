@@ -79,7 +79,7 @@
         "By simply uploading your project details, DockAssist generates a ready-to-use Dockerfile, ensuring your application is containerized with best practices."
       ],
       "deployedOn": {
-        "url": https://huggingface.co/spaces/Shubham126/DockAssist",
+        "url": "https://huggingface.co/spaces/Shubham126/DockAssist",
         "platform": "Hugging Face"
       }
     },

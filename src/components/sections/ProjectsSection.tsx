@@ -13,6 +13,10 @@ interface ProjectCardProps {
     url: string;
     platform: string;
   };
+  demo?: {
+    url: string;
+    platform: string;
+  };
   index: number;
 }
 
@@ -22,6 +26,7 @@ const ProjectCard = ({
   technologies = [], 
   publication, 
   deployedOn,
+  demo,
   index 
 }: ProjectCardProps) => {
   const cardRef = useRef<HTMLDivElement>(null);
@@ -100,6 +105,19 @@ const ProjectCard = ({
                 </svg>
               </a>
             )}
+            {demo && (
+              <a 
+                href={demo.url} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-[var(--highlight)] hover:underline inline-flex items-center"
+              >
+                <span>Demo - {deployedOn.platform}</span>
+                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+            )}
           </div>
         </div>
         
@@ -149,8 +167,16 @@ const ProjectsSection = () => {
       url: "https://huggingface.co/spaces/Shubham126/DockAssist",
       platform: "Hugging face"
     }
+    
   };
 
+  const projectDemo = {
+    "Aura sense - Identity and Mood Recognition system": ["CNN", "MobileNetV2", "Transfer Learning", "Computer Vision", "TensorFlow": {
+      url: "https://youtu.be/BnlZIYyMLEc?feature=shared",
+      platform: "YouTube"
+    }
+  };
+  
   return (
     <section
       id="projects"
@@ -176,6 +202,7 @@ const ProjectsSection = () => {
                   technologies={projectTechnologies[project.title as keyof typeof projectTechnologies] || []}
                   publication={project.publication}
                   deployedOn={projectDeployments[project.title as keyof typeof projectDeployments]}
+                  demo={projectDemo[project.demo as keyof typeof projectDemo]}
                 />
               </ScrollReveal>
             ))

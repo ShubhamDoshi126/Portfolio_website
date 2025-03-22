@@ -70,7 +70,7 @@
       "description": [
         "Built a tool to extract events from images of tables using OCR (Tesseract) and AI, mapping them into structured Google Calendar schedules. Useful for images with timetable, movie tickets, conference schedules, etc.",
         "Emphasized GPU-based acceleration for real-time processing and performance tuning."
-      ],
+      ]
     },
     {
       "title": "DockAssist: AI-Powered Dockerfile Generator",

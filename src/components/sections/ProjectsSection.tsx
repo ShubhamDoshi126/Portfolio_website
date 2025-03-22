@@ -168,14 +168,14 @@ const ProjectsSection = () => {
       platform: "Hugging face"
     }
     "Aura sense - Identity and Mood Recognition system": {
-      "url": "https://github.com/ShubhamDoshi126/Aura-Sense-Gender-and-Mood-recognition-system",
-      "platform": "GitHub"
+      url: "https://github.com/ShubhamDoshi126/Aura-Sense-Gender-and-Mood-recognition-system",
+      platform: "GitHub"
     }
     
   };
 
   const projectDemo = {
-    "Aura sense - Identity and Mood Recognition system": ["CNN", "MobileNetV2", "Transfer Learning", "Computer Vision", "TensorFlow": {
+    "Aura sense - Identity and Mood Recognition system": {
       url: "https://youtu.be/BnlZIYyMLEc?feature=shared",
       platform: "YouTube"
     }

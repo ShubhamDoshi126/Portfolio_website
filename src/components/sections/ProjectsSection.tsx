@@ -167,6 +167,10 @@ const ProjectsSection = () => {
       url: "https://huggingface.co/spaces/Shubham126/DockAssist",
       platform: "Hugging face"
     }
+    "Aura sense - Identity and Mood Recognition system": {
+      "url": "https://github.com/ShubhamDoshi126/Aura-Sense-Gender-and-Mood-recognition-system",
+      "platform": "GitHub"
+    }
     
   };
 

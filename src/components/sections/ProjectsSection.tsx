@@ -145,9 +145,10 @@ const ProjectsSection = () => {
       url: "https://github.com/ShubhamDoshi126/Mental_Health_Chatbot_with_Sentiment_Analysis",
       platform: "Github"
     },
-    "DockAssist: AI-Powered Dockerfile Generator":{
+    "DockAssist: AI-Powered Dockerfile Generator": {
       url: "https://huggingface.co/spaces/Shubham126/DockAssist",
       platform: "Hugging face"
+    }
   };
 
   return (

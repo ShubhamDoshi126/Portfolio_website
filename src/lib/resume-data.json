@@ -51,12 +51,13 @@
       "deployedOn": {
         "url": "https://github.com/ShubhamDoshi126/Aura-Sense-Gender-and-Mood-recognition-system",
         "platform": "GitHub"
-      }
+      },
       "demo": {
-        "url": "https://youtu.be/BnlZIYyMLEc?feature=shared"
+        "url": "https://youtu.be/BnlZIYyMLEc?feature=shared",
         "platform": "YouTube"
       }
     },
+
     {
       "title": "Sentiment analysis on Mental Health dataset",
       "description": [

@@ -55,6 +55,7 @@
       "demo": {
         "url": "https://youtu.be/BnlZIYyMLEc?feature=shared"
         "platform": "YouTube"
+      }
     },
     {
       "title": "Sentiment analysis on Mental Health dataset",

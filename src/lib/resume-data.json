@@ -47,7 +47,11 @@
         "Developed a comprehensive system for gender and mood recognition using CNN models.",
         "For gender classification, implemented transfer learning with the MobileNetV2 architecture and applied data augmentation and upscaling techniques, achieving a test accuracy of 98.38%. As this was a team project it enhanced my project management skills.",
         "For mood recognition, designed and trained a CNN model to effectively evaluate a range of emotions from facial images."
-      ]
+      ],
+      "deployedOn": {
+        "url": "https://github.com/ShubhamDoshi126/Aura-Sense-Gender-and-Mood-recognition-system",
+        "platform": "GitHub"
+      }
     },
     {
       "title": "Sentiment analysis on Mental Health dataset",
@@ -55,14 +59,29 @@
         "Combined and cleaned a dataset of 90000 statements mapped to 11 different emotions.",
         "Comparing accuracy and training efficiencies of traditional ML models like Linear SVC, RandomForestClassifier and LSTM.",
         "Enhancing the Gemini powered Mental Health Chatbot to use sentiment analysis and emotion classified results in its responses."
-      ]
+      ],
+      "deployedOn": {
+        "url": "https://huggingface.co/spaces/ShubhamDoshi/sentiment-analysis",
+        "platform": "Hugging Face"
+      }
     },
     {
-      "title": "SchedulrAI \u2013 Computer vision and GPU optimized Image to schedule system",
+      "title": "SchedulrAI – Computer vision and GPU optimized Image to schedule system",
       "description": [
         "Built a tool to extract events from images of tables using OCR (Tesseract) and AI, mapping them into structured Google Calendar schedules. Useful for images with timetable, movie tickets, conference schedules, etc.",
         "Emphasized GPU-based acceleration for real-time processing and performance tuning."
-      ]
+      ],
+    },
+    {
+      "title": "DockAssist: AI-Powered Dockerfile Generator",
+      "description": [
+        "DockAssist is an AI-powered tool designed to make Docker and containerization more accessible for developers—especially beginners",
+        "By simply uploading your project details, DockAssist generates a ready-to-use Dockerfile, ensuring your application is containerized with best practices."
+      ],
+      "deployedOn": {
+        "url": https://huggingface.co/spaces/Shubham126/DockAssist",
+        "platform": "Hugging Face"
+      }
     },
     {
       "title": "Voice-Controlled AI Virtual Assistant",

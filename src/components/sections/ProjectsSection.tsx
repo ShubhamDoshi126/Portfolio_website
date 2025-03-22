@@ -131,7 +131,7 @@ const ProjectsSection = () => {
     "Aura sense - Identity and Mood Recognition system": ["CNN", "MobileNetV2", "Transfer Learning", "Computer Vision", "TensorFlow"],
     "Sentiment analysis on Mental Health dataset": ["NLP", "LSTM", "Sentiment Analysis", "Machine Learning", "Gemini API"],
     "SchedulrAI – Computer vision and GPU optimized Image to schedule system": ["OCR", "Tesseract", "GPU Acceleration", "Google Calendar API", "Computer Vision"],
-    "DockAssist: AI-Powered Dockerfile Generator": ["Python", "Flask", "Werkzeug", "Huggingface", "Gemini"],
+    "DockAssist: AI-Powered Dockerfile Generator": ["Python", "Flask", "Werkzeug", "Docker", "Huggingface", "Gemini"],
     "Voice-Controlled AI Virtual Assistant": ["ChatGPT API", "Python", "PyQT", "Pyttsx3", "Whisper", "Speech Recognition"]
   };
 

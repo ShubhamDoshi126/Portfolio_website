@@ -9,10 +9,21 @@ interface ProjectCardProps {
   description: string[];
   technologies?: string[];
   publication?: string;
+  deployedOn?: {
+    url: string;
+    platform: string;
+  };
   index: number;
 }
 
-const ProjectCard = ({ title, description, technologies = [], publication, index }: ProjectCardProps) => {
+const ProjectCard = ({ 
+  title, 
+  description, 
+  technologies = [], 
+  publication, 
+  deployedOn,
+  index 
+}: ProjectCardProps) => {
   const cardRef = useRef<HTMLDivElement>(null);
   const [tiltStyle, setTiltStyle] = useState({});
 
@@ -61,8 +72,8 @@ const ProjectCard = ({ title, description, technologies = [], publication, index
             ))}
           </div>
           
-          {publication && (
-            <div className="mb-4">
+          <div className="flex flex-wrap gap-4 mb-4">
+            {publication && (
               <a 
                 href={publication} 
                 target="_blank" 
@@ -74,8 +85,22 @@ const ProjectCard = ({ title, description, technologies = [], publication, index
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
                 </svg>
               </a>
-            </div>
-          )}
+            )}
+            
+            {deployedOn && (
+              <a 
+                href={deployedOn.url} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-[var(--highlight)] hover:underline inline-flex items-center"
+              >
+                <span>Project - {deployedOn.platform}</span>
+                <svg className="w-4 h-4 ml-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                </svg>
+              </a>
+            )}
+          </div>
         </div>
         
         <div className="mt-auto">
@@ -106,7 +131,20 @@ const ProjectsSection = () => {
     "Aura sense - Identity and Mood Recognition system": ["CNN", "MobileNetV2", "Transfer Learning", "Computer Vision", "TensorFlow"],
     "Sentiment analysis on Mental Health dataset": ["NLP", "LSTM", "Sentiment Analysis", "Machine Learning", "Gemini API"],
     "SchedulrAI – Computer vision and GPU optimized Image to schedule system": ["OCR", "Tesseract", "GPU Acceleration", "Google Calendar API", "Computer Vision"],
+    "DockAssist: AI-Powered Dockerfile Generator": ["Python", "Flask", "Werkzeug", "Huggingface", "Gemini"],
     "Voice-Controlled AI Virtual Assistant": ["ChatGPT API", "Python", "PyQT", "Pyttsx3", "Whisper", "Speech Recognition"]
+  };
+
+  // Define deployment info for projects
+  const projectDeployments = {
+    "SchedulrAI – Computer vision and GPU optimized Image to schedule system": {
+      url: "https://github.com/ShubhamDoshi126/SchedulrAI",
+      platform: "GitHub"
+    },
+    "Sentiment analysis on Mental Health dataset": {
+      url: "https://huggingface.co/spaces/ShubhamDoshi/sentiment-analysis",
+      platform: "Hugging Face"
+    }
   };
 
   return (
@@ -133,6 +171,7 @@ const ProjectsSection = () => {
                   description={project.description}
                   technologies={projectTechnologies[project.title as keyof typeof projectTechnologies] || []}
                   publication={project.publication}
+                  deployedOn={projectDeployments[project.title as keyof typeof projectDeployments]}
                 />
               </ScrollReveal>
             ))

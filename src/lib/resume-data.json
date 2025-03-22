@@ -61,8 +61,8 @@
         "Enhancing the Gemini powered Mental Health Chatbot to use sentiment analysis and emotion classified results in its responses."
       ],
       "deployedOn": {
-        "url": "https://huggingface.co/spaces/ShubhamDoshi/sentiment-analysis",
-        "platform": "Hugging Face"
+        "url": "https://github.com/ShubhamDoshi126/Mental_Health_Chatbot_with_Sentiment_Analysis",
+        "platform": "Github"
       }
     },
     {
